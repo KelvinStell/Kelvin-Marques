@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IProdutoCarrinho } from '../produtos';
+import { CarrinhoService } from '../carrinho.service';
 
 @Component({
   selector: 'app-carrinho',
@@ -13,7 +14,7 @@ total = 0;
   rounter: any;
 
   constructor(
-    public carrinhoService: CarrinhoComponent
+    public carrinhoService: CarrinhoService
   ){}
 
   ngOnInit() : void{
